@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center|center_horizontal"
+    android:padding="25dp"
+    android:gravity="center">
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progress_circular"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/SpinKitView.FadingCircle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorPrimaryDark" />
+
+    <Button
+        android:visibility="visible"
+        android:id="@+id/succeeded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_verified_user_black_24dp"/>
+
+    <Button
+        android:visibility="visible"
+        android:id="@+id/failed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_error_black_24dp"/>
+</LinearLayout>
